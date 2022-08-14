@@ -4,8 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"prettier": "prettier --write 'contracts/**/*.sol'",
 		"test": "node scripts/test.js",
-		"prettier": "prettier --write 'contracts/**/*.sol'"
+		"deploy": "npx hardhat run scripts/deploy.js --network mumbai"
 	},
 	"author": "",
 	"license": "ISC",
@@ -14,5 +15,8 @@
 		"hardhat": "^2.10.1",
 		"prettier": "^2.7.1",
 		"prettier-plugin-solidity": "^1.0.0-beta.24"
+	},
+	"dependencies": {
+		"dotenv": "^16.0.1"
 	}
 }
