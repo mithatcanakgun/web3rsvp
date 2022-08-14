@@ -1,15 +1,18 @@
 {
-  "name": "web3rsvp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
-    "hardhat": "^2.10.1"
-  }
+	"name": "web3rsvp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node scripts/test.js",
+		"prettier": "prettier --write 'contracts/**/*.sol'"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@nomicfoundation/hardhat-toolbox": "^1.0.2",
+		"hardhat": "^2.10.1",
+		"prettier": "^2.7.1",
+		"prettier-plugin-solidity": "^1.0.0-beta.24"
+	}
 }
